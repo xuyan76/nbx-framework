@@ -18,6 +18,26 @@
         <module>nbx-data</module>
         <!-- 项目网关模块 -->
         <module>nbx-gateway</module>
+        <!-- SSO模块 -->
+        <module>nbx-sso</module>
     </modules>
+
+    <properties>
+        <java.version>17</java.version>
+        <spring-cloud.version>2021.0.3</spring-cloud.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!-- maven服务器改为阿里云 -->
+    <repositories>
+        <repository>
+            <id>public</id>
+            <name>aliyun nexus</name>
+            <url>https://maven.aliyun.com/repository/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
 
 </project>

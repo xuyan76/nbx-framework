@@ -51,12 +51,17 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
     </dependencies>
 
+    <!-- 由于基于springcloud开发版开发，所以maven指向改向spring官方的repo -->
     <repositories>
         <repository>
             <id>spring-milestones</id>

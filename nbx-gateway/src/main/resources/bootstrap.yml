@@ -3,7 +3,4 @@ server:
 
 spring:
   application:
-    name: @artifactId@
-
-  cloud:
-    consul:
+    name: nbx-gateway-application

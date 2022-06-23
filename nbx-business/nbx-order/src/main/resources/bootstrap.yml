@@ -1,0 +1,14 @@
+server:
+  port: 7888
+
+spring:
+  application:
+      name: nbx-order-application
+
+  consul:
+    host: 127.0.0.1
+    port: 8500
+    discovery:
+      serviceName: nbx-order-application
+      register: true
+      instance_id: nbx-order-application

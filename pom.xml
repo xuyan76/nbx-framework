@@ -20,8 +20,8 @@
         <module>nbx-gateway</module>
         <!-- SSO模块 -->
         <module>nbx-sso</module>
+        <!-- 业务代码部份 -->
         <module>nbx-business</module>
-        <module>nbx-business/nbx-order</module>
     </modules>
 
     <properties>
@@ -56,6 +56,11 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bootstrap -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
     </dependencies>
 

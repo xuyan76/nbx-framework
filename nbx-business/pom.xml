@@ -2,14 +2,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>nbx</artifactId>
         <groupId>com.sysftech</groupId>
         <version>1.0.0</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
-    <name>nbx-commons</name>
-    <artifactId>nbx.commons</artifactId>
-    <description>nbx公共模块</description>
+
+    <artifactId>nbx-business</artifactId>
+    <description>nbx业务代码部份</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>nbx-order</module>
+        <module>nbx-product</module>
+        <module>nbx-pay</module>
+        <module>nbx-supplier</module>
+        <module>nbx-report</module>
+        <module>nbx-pos</module>
+    </modules>
 
 </project>

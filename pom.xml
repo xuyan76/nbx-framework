@@ -20,12 +20,14 @@
         <module>nbx-gateway</module>
         <!-- SSO模块 -->
         <module>nbx-sso</module>
+        <module>nbx-business</module>
+        <module>nbx-business/nbx-order</module>
     </modules>
 
     <properties>
         <java.version>17</java.version>
-        <spring-cloud.version>2022.0.0-M2</spring-cloud.version>
-        <spring-boot.version>3.0.0-M3</spring-boot.version>
+        <spring-cloud.version>2021.0.3</spring-cloud.version>
+        <spring-boot.version>2.7.0</spring-boot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <hutool.version>5.8.3</hutool.version>
     </properties>
@@ -48,11 +50,8 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -60,17 +59,6 @@
         </dependency>
     </dependencies>
 
-    <!-- 由于基于springcloud开发版开发，所以maven指向改向spring官方的repo -->
-    <repositories>
-        <repository>
-            <id>spring-milestones</id>
-            <name>spring.io repo</name>
-            <url>https://repo.spring.io/milestone</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
-    </repositories>
 
     <build>
         <plugins>

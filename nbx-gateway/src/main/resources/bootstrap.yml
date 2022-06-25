@@ -5,9 +5,6 @@ spring:
   application:
     name: nbx-gateway-application
 
-  main:
-    web-application-type: reactive
-
   redis:
     host: localhost
     port: 6379
@@ -16,7 +13,7 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: order_router
-          uri: http://localhost:7888
+        - id: platform_router
+          uri: lb://platform-service
           predicates:
-            - Path=/v1/order/*
+            - Path=/platform/*

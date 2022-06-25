@@ -17,5 +17,6 @@
         <module>nbx-supplier-manager</module>
         <module>nbx-outlet-manager</module>
         <module>nbx-platform-manager</module>
+        <module>nbx-pay-manager</module>
     </modules>
 </project>

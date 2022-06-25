@@ -1,4 +1,4 @@
-package com.sysftech.nbx.gateway;
+package com.sysftech.nbx.sso;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,9 +6,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class NbxGatewayApplication {
-
-    public static void main(String[] args){
-        SpringApplication.run(NbxGatewayApplication.class, args);
+public class NbxSsoApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(NbxSsoApplication.class, args);
     }
 }

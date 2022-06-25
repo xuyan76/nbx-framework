@@ -1,0 +1,18 @@
+server:
+  port: 6666
+
+spring:
+  application:
+    name: @artifactId@
+
+  cloud:
+    consul:
+      host: ${CONSUL_HOST:localhost}
+      port: ${CONSUL_PORT:8500}
+    discovery:
+      serviceName: ${spring.application.name}
+      register: true
+      instance_id: ${spring.application.name}
+
+
+

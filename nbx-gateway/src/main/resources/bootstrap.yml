@@ -4,3 +4,14 @@ server:
 spring:
   application:
     name: nbx-gateway-application
+
+  main:
+    web-application-type: reactive
+
+  cloud:
+    gateway:
+      routes:
+        - id: order_router
+          uri: http://localhost:7888
+          predicates:
+            - Path=/v1/order/*

@@ -6,11 +6,15 @@
         <artifactId>nbx</artifactId>
         <groupId>com.sysftech</groupId>
         <version>1.0.0</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>nbx.sso</artifactId>
-    <name>nbc-sso</name>
+    <artifactId>nbx-supplier-manager</artifactId>
 
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
 
 </project>

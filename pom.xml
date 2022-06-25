@@ -22,6 +22,7 @@
         <module>nbx-sso</module>
         <!-- 业务代码部份 -->
         <module>nbx-business</module>
+        <module>nbx-manager</module>
     </modules>
 
     <properties>

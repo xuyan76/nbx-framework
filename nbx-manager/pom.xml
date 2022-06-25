@@ -2,15 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>nbx</artifactId>
         <groupId>com.sysftech</groupId>
         <version>1.0.0</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>nbx.sso</artifactId>
-    <name>nbc-sso</name>
+    <artifactId>nbx-manager</artifactId>
+    <description>业务管理端代码</description>
+    <packaging>pom</packaging>
 
-
+    <modules>
+        <module>nbx-supplier-manager</module>
+        <module>nbx-outlet-manager</module>
+        <module>nbx-platform-manager</module>
+    </modules>
 </project>

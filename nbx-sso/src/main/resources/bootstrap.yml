@@ -15,4 +15,5 @@ spring:
       instance_id: ${spring.application.name}
 
 
-
+  profiles:
+    active: @profile.active@

@@ -12,6 +12,7 @@
     <artifactId>nbx.sso</artifactId>
     <name>nbx-sso</name>
     <packaging>jar</packaging>
+    <description>nbx单点登陆</description>
 
     <dependencies>
         <dependency>

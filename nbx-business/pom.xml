@@ -7,7 +7,6 @@
         <artifactId>nbx</artifactId>
         <groupId>com.sysftech</groupId>
         <version>1.0.0</version>
-        <relativePath/>
     </parent>
 
     <artifactId>nbx-business</artifactId>
@@ -22,6 +21,13 @@
         <module>nbx-report</module>
         <module>nbx-pos</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId></groupId>
+            <artifactId></artifactId>
+        </dependency>
+    </dependencies>
 
     <dependencies>
         <dependency>

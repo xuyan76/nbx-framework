@@ -2,6 +2,9 @@ server:
   port: 9999
 
 spring:
+  profiles:
+    active: @profile.active@
+
   application:
     name: nbx-gateway-application
 

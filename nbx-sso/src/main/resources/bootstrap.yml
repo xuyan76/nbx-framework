@@ -1,19 +1,30 @@
+### web
 server:
-  port: 6666
+  port: 8088
+  servlet:
+    context-path: /xxl-sso-server
 
+### resources
 spring:
-  application:
-    name: @artifactId@
+  mvc:
+    servlet:
+      load-on-startup: 0
+    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:/static/
 
-  cloud:
-    consul:
-      host: ${CONSUL_HOST:localhost}
-      port: ${CONSUL_PORT:8500}
-    discovery:
-      serviceName: ${spring.application.name}
-      register: true
-      instance_id: ${spring.application.name}
+  # freemarker
+  freemarker:
+    templateLoaderPath: classpath:/templates/
+    suffix: .ftl
+    charset: UTF-8
+    request-context-attribute: request
+    settings.number_format: 0.##########
 
-
-  profiles:
-    active: @profile.active@
+### xxl-sso
+xxl:
+  sso:
+    redis:
+      address: redis://127.0.0.1:6379
+      expire:
+        minute: 1440

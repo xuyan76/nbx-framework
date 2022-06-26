@@ -37,6 +37,7 @@
         <hutool.version>5.8.3</hutool.version>
         <!-- 官方推荐限流工具 -->
         <resilience4j.version>1.7.1</resilience4j.version>
+        <xxl-sso.version>1.1.0</xxl-sso.version>
     </properties>
 
     <dependencyManagement>

@@ -22,7 +22,10 @@
         <module>nbx-sso</module>
         <!-- 业务代码部份 -->
         <module>nbx-business</module>
+        <!-- 管理端代码 -->
         <module>nbx-manager</module>
+        <!-- 权限认证模块 -->
+        <module>nbx-auth</module>
     </modules>
 
     <properties>

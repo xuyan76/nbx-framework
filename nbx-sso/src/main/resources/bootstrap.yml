@@ -6,6 +6,12 @@ server:
 
 ### resources
 spring:
+  application:
+    name: @artifactId@
+
+  profiles:
+    active: @profile.active@
+
   mvc:
     servlet:
       load-on-startup: 0
@@ -20,6 +26,15 @@ spring:
     charset: UTF-8
     request-context-attribute: request
     settings.number_format: 0.##########
+
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        serviceName: ${spring.application.name}
+        register: true
+        instance_id: ${spring.application.name}
 
 ### xxl-sso
 xxl:

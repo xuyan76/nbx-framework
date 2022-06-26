@@ -13,6 +13,11 @@
     <description>单点登陆中心，基于xxl-sso</description>
 
     <dependencies>
+        <dependency>
+            <groupId>com.sysftech</groupId>
+            <artifactId>nbx.commons</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <!-- web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -29,7 +34,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+        </dependency>
         <!-- xxl-sso-core -->
         <dependency>
             <groupId>com.xuxueli</groupId>
